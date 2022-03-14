@@ -12,8 +12,8 @@ using namespace std;
 /**
 * Fuction <code> drawHorizontalLine <code> draws a horizontal line
 * <BR>
-* @param length The length of the line
-* @param ch The sympol to use for the line
+* @param length The length of the line.
+* @param ch The sympol to use for the line.
 */
 void drawHorizontalLine(const int length, const char ch) {
 	cout << "Horizontal Line( " << length << ", " << ch << ")\n";
@@ -24,7 +24,7 @@ void drawHorizontalLine(const int length, const char ch) {
 }
 
 /**
-* Fuction <code> drawVerticalLine <code> draws a vertical line
+* Fuction <code> drawVerticalLine <code> draws a vertical line.
 * <BR>
 * @param heigth The height of the line.
 * @param ch The sympol to use for the line.
@@ -63,7 +63,7 @@ void drawSquare(const int size, const char ch) {
 }
 
 /**
-* Fuction <code> drawRectangle <code> draws a Rectangle 
+* Fuction <code> drawRectangle <code> draws a Rectangle. 
 * <BR>
 * @param height The height of the rectangle.
 * @param length The length of the rectangle.
@@ -90,7 +90,7 @@ void drawRectangle(const int height, const int length, const char ch) {
 }
 
 /**
-* Fuction <code> drawRandomShapes <code> draws a number of random
+* Fuction <code> drawRandomShapes <code> draws a number of random.
 * shapes.
 * <BR>
 * @param numShapes How many random shapes to draw.
@@ -101,7 +101,7 @@ void drawRandomShapes(int numShapes) {
 		int ShapeType = 1 + rand() % 4;
 		int height = 1 + rand() % 20;
 		int length = 1 + rand() % 20;
-		char sympol = rand() % 94;//33-126
+		char sympol = rand() % 94;//ASCII table 33-126
 
 
 
