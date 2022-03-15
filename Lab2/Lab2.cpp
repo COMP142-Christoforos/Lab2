@@ -99,7 +99,7 @@ void drawRectangle(const int height, const int length, const char ch) {
 void drawRandomShapes(int numShapes) {
 	cout << "Enter the number for the random shape";
 	cin >> numShapes;
-	assert(numShapes > 0);
+	assert(numShapes > 0);//pre condition
 	
 	for (int i = 0; i < numShapes; i++) {
 		cout << "\nDraws randoms shapes\n";
@@ -128,7 +128,7 @@ void drawRandomShapes(int numShapes) {
 			drawVerticalLine(length, sympol);
 			break;
 		default:
-			assert(false);
+			assert(false);//should not be possible
 			cout << "Wrong input";
 
 		}
