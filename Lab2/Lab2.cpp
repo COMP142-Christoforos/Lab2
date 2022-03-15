@@ -1,6 +1,6 @@
 /** \file Lab2.cpp
 * \brief Small drawing program
-* \details This progrma...
+* \details This progrma is drowing program
 * \Christoforos Chari
 * \date 14/03/2022 
 */
