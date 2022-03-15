@@ -7,6 +7,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
+#include<cassert>
 using namespace std;
 
 /**
@@ -96,6 +97,10 @@ void drawRectangle(const int height, const int length, const char ch) {
 * @param numShapes How many random shapes to draw.
 */
 void drawRandomShapes(int numShapes) {
+	cout << "Enter the number for the random shape";
+	cin >> numShapes;
+	assert(numShapes > 0);
+	
 	for (int i = 0; i < numShapes; i++) {
 		cout << "\nDraws randoms shapes\n";
 		int ShapeType = 1 + rand() % 4;
@@ -123,6 +128,7 @@ void drawRandomShapes(int numShapes) {
 			drawVerticalLine(length, sympol);
 			break;
 		default:
+			assert(false);
 			cout << "Wrong input";
 
 		}
